@@ -1,0 +1,115 @@
+
+
+/* Estilos básicos da carta */
+.card {
+    margin: 5px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all 1s;
+}
+
+/* Estilo da carta quando passa o mouse sobre ela */
+.card:hover {
+    background-image: linear-gradient(#00123a, #380e74);
+}
+
+/* Estilos da imagem da carta */
+.card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+/* Estilo do texto da carta */
+.card .img span {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all 0.5s;
+}
+
+/* Estilo da carta quando passa o mouse sobre ela */
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+/* Estilo do texto da carta quando passa o mouse sobre ela */
+.card:hover .img span {
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Estilos do conteúdo da carta */
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+/* Estilo do conteúdo da carta quando passa o mouse sobre ela */
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos do texto do conteúdo da carta */
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+/* Estilo da seta da carta */
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all 1s;
+}
+
+/* Estilo da seta da carta quando passa o mouse sobre ela */
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
